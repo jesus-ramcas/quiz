@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="648dp"
+        android:onClick="Salir"
+        android:text="salir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Covid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="28dp"
+        android:text="Covid"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="122dp"
+        android:onClick="siguiente"
+        android:text="siguiente"
+        app:layout_constraintStart_toEndOf="@+id/salir"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/txtNpregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="176dp"
+        android:text="Pregunta 1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="405dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="129dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNpregunta">
+
+        <RadioButton
+            android:id="@+id/respuesta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Si"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/respuesta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/respuesta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tal vez"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPregunta"
+        android:layout_width="252dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="156dp"
+        android:text="Eliga una opcion"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Covid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
